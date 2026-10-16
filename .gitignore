@@ -1,0 +1,29 @@
+# Build output. `make examples` links the example programs here as
+# bin/ng-list, bin/ng-mkpeer, bin/ng-data; `make clean` removes the whole
+# directory.
+/bin/
+
+# Go test and coverage artifacts.
+*.test
+*.out
+*.prof
+coverage.html
+
+# cgo/linker leftovers. This package is cgo (-lnetgraph), so a failed or
+# interrupted build can leave these behind.
+*.o
+*.a
+*.so
+_obj/
+_cgo_*
+
+# Go workspace files are per-developer, not part of the module.
+go.work
+go.work.sum
+
+# Editor and OS noise.
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
